@@ -1,0 +1,161 @@
+:root{
+    --coloLetras: white;
+}
+
+/*PRINCIPAL*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /*Correccion modelo caja*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}/*Correccion modelo caja*/
+
+
+
+/*GENERAL*/
+body{
+    background-color: rgb(15, 15, 15);
+}
+
+h1, h2, h3, p{
+    color: var(--coloLetras);
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+/******************START*********************/
+
+/*INTRODUCCION*/
+.bg__introduccion{
+    background-image: url(/Imagen\ de\ WhatsApp\ 2024-11-22\ a\ las\ 19.23.51_396a0b2b.jpg);
+    min-width: 900px;
+    height: 100vh;
+
+    background-position: center;
+    background-size: cover;
+}
+
+.contenedor__introduccion{
+    background-color: rgba(0, 0, 0, 0.665);
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    justify-items: center;
+    align-items: center;
+   
+    padding: 5rem;
+}
+
+.foto{
+    width: 40rem;
+    border-radius: 50%;
+    box-shadow: 1px 5px 20px 2px black;
+}
+
+.introduccion p{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.boton_CV{
+    display: inline-block;
+
+    padding: 1.5rem;
+    border-radius: 5px;
+    
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2rem;
+
+    text-align: center;
+
+    background-color: rgba(105, 105, 105, 0.546);
+    width: 20rem;
+
+    transition: background-color 2s, box-shadow 1s;
+}
+.boton_CV:hover{
+    background-color: black;
+    box-shadow: 1px 1px 20px 1px rgb(255, 255, 255);
+}
+
+.contatos{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.contatos__imagenes{
+    width: 4rem;
+}
+
+@keyframes Movbajo{
+    0% {bottom: 0px;}
+    50% {bottom: 10px;}
+    100% {bottom: 0px;}
+}
+.Abajo{
+    width: 8rem;
+    position: absolute;
+    bottom: 0;
+
+    animation-name: Movbajo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+/*TECNOLOGIAS*/
+.main{
+    padding: 8rem 5rem;
+}
+
+.tecnologias{
+    text-align: center;
+}
+.tecnologias img{
+    margin-top: 5rem;
+}
+
+.logo_tecnologias_backend{
+    width: 8rem;
+}
+
+
+.logo_tecnologias img{
+    width: 5rem;
+}
+
+/*PROYECTOS*/
+.Contenedror_proyecto{
+    display: flex;
+    width: 80rem;
+}
+.Contenedror_proyecto p{
+ width: 2rem;
+}
+.caja_proyecto{
+    margin: 2rem;
+    width: 50rem;
+    height: 30rem;
+    background-color: aqua;
+}
